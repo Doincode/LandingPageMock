@@ -396,6 +396,11 @@
   resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.16.17.tgz"
   integrity sha512-y+EHuSchhL7FjHgvQL/0fnnFmO4T1bhvWANX6gcnqTjtnKWbTvUMCpGnv2+t+31d7RzyEAYAd4u2fnIhHL6N/Q==
 
+"@fontsource/ephesis@^4.5.8":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/ephesis/-/ephesis-4.5.8.tgz#4c51940305388b0de1951ea9f5d87b6df70f3ced"
+  integrity sha512-FgVvjG8jjPN7J8fS7FrZQuHPFPw+mQw7ujzP0wqQHHvs6ALhUQIAjUakizNTwBvU8QqiyYdtO3HfSGNk7Bnhyg==
+
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
   resolved "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.1.1.tgz"
