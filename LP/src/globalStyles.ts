@@ -3,6 +3,7 @@ import '@fontsource/ephesis'
 
 export const GlobalStyles = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
 
     * {
     margin:0;
@@ -22,20 +23,50 @@ export const GlobalStyles = createGlobalStyle`
     --color-warning: #ffcf07;
     --color-negative: #e60000;
     --color-information: #155bcb;
+
+    --third-font: 'Judson', serif;
+
   }
   body {
     background-color: #061121;
   }
 
   h2{
-    text-align: center;
     font-family: 'Varela Round', sans-serif;
-    font-size: 1.2rem;
-}
-
-    h2 > b{
-        font-size: 2rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  h2 > b{
+      font-size: 1.3rem;
 
     }
+
+    a{
+      font-size: .9rem;
+      text-decoration: none;
+      text-align: center;
+      font-family: var(--third-font);
+      color: #FFFFFF;
+      
+    }
+    small{
+      font-family: var(--third-font);
+      font-weight: 600;
+      font-size: .9rem;
+      text-align: center;      
+    }
+    span{
+      font-size: 1.8rem;
+      font-weight: bolD;
+      font-family: var(--third-font);
+      text-align: center;      
+    }
+    nav{
+      font-size: .8rem;
+      display:flex;
+      gap: 1rem;
+      justify-content: center;
+  }
 
 `
