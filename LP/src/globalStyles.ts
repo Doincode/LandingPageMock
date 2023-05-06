@@ -62,6 +62,9 @@ export const GlobalStyles = createGlobalStyle`
       font-family: var(--third-font);
       text-align: center;      
     }
+    p{
+      
+    }
     nav{
       font-size: .8rem;
       display:flex;

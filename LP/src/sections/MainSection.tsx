@@ -1,8 +1,7 @@
 import React from 'react';
 import { useSpring, animated } from '@react-spring/web'
-import {MainWrapper, Header, WhatsAppButton, VideoBackground, VideoWrapper , MainContent, LogoTitle, LogoSubtitle, LogoComponent } from './style'
+import {MainWrapper, WhatsAppButton, VideoBackground, VideoWrapper , MainContent, LogoTitle, MainSubtitle, LogoComponent } from './style'
 import handshake from '../assets/handshake.mp4'
-import logo from '../assets/DR-logo.svg'
 import wppicon from '../assets/wpp_icon.svg'
 
 
@@ -33,23 +32,13 @@ const MainSection = () => {
             />      
         </VideoWrapper> 
        <MainContent style={contentSpring}>
-            {/* <Header>
-              <img src={logo} alt='Doin & Ribeiro imagotipo' />
-              <nav>
-                <a href="">início</a>
-                <a href="">Sobre nós</a>
-                <a href="">área de atuação</a>
-                <a href="">contato</a>
-              </nav>
-            </Header> */}
-
             <LogoComponent>
                 <LogoTitle>
                     <h1>Doin Ribeiro</h1>
                 </LogoTitle>
-                <LogoSubtitle>
+                <MainSubtitle>
                     <h2>advocacia criminal</h2>
-                </LogoSubtitle>
+                </MainSubtitle>
             </LogoComponent>
             <div className='group-2'>
               <div className='subtitle'>

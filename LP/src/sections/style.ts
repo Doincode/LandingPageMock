@@ -25,28 +25,7 @@ object-fit: cover;
 filter: blur(20px);
 box-shadow: inset 0 0 130px 190px rgba(0, 0, 0, 0.5);
 `
-export const Header = styled(animated.div)`
-    height: 5rem;
-    width: 100vw;
-    
-    align-self: center;  
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 1rem;
 
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,.3) 0%, rgba(0,0,0,.3) 10%, rgba(244,244,244,0) 100%);
-
-
-  img{
-    height: 2rem;
-  }
-
-  
-
-`
 export const WhatsAppButton = styled(animated.div)`
     display: flex;
     justify-content: flex-start;
@@ -124,7 +103,7 @@ export const LogoTitle = styled(animated.div)`
     }
 
 `
-export const LogoSubtitle = styled(animated.div)`
+export const MainSubtitle = styled(animated.div)`
     h2{
         letter-spacing: .4rem;
         
@@ -151,4 +130,66 @@ export const LogoComponent = styled(animated.div)`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+`
+
+
+
+export const CardsContent = styled(animated.div)`
+    height: 100vh;
+    width: 100%;
+
+    background: #F8F1F6;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        justify-content: center;
+        align-items: center;
+
+        width: 85%;
+    }
+    
+    li{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        align-items: center;
+
+        font-family: 'Calistoga', cursive;
+        font-weight: bold;
+        color: #2A324B;
+    
+        text-align: center;
+        width: 8rem;
+    }
+    #fourth > p{
+        height: 2rem;
+        width: 11rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: .5rem;
+    }
+    img{
+        max-width: 70%;
+        filter: drop-shadow(2px 2px 4px rgba(184, 102, 0, 50%));
+    }
+`
+export const Card = styled(animated.div)`
+    height: 8rem;
+    width: 7rem;
+
+    display: flex;
+    justify-content: center;
+
+    background: #F8F1F6;
+    border: 2px solid rgba(184, 102, 0, 0.6);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 33px;
 `
