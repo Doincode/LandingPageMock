@@ -34,7 +34,7 @@ export const WhatsAppButton = styled(animated.div)`
     
     height: 4.5rem;
     min-width: fit-content;
-    width: inherit;
+    width: min-content;    
     max-width: 18.9rem;
     border-radius: 30px;
     
@@ -143,18 +143,54 @@ export const CardsContent = styled(animated.div)`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    
+    > p{
+        margin-top: 2rem;
+        width: 80%;
+        text-align: center;
+        font-size: 1.4rem;
+        
+    }
+    h3{
+        color: #F8F1F6;
+        font-size: 1.8rem;
+
+        width: 100%;
+        height: 20%;
+        padding-top: 10%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: center;
+        background: linear-gradient(90deg, rgba(184, 102, 0, 0.5) -0.14%, rgba(184, 102, 0, 0.721958) 10.31%, #B86600 46.65%, rgba(184, 102, 0, 0.696918) 94.47%, rgba(184, 102, 0, 0.5) 100%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    p{
+        font-weight: 600;
+        color: #2A324B;
+    }
 
     ul{
         display: flex;
-        flex-wrap: wrap;
         gap: 2rem;
 
         justify-content: center;
         align-items: center;
 
+        height: 60%;
         width: 85%;
+        overflow: scroll;
+
+        
     }
-    
+    ul > div{
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
     li{
         display: flex;
         flex-direction: column;

@@ -4,6 +4,7 @@ import '@fontsource/ephesis'
 export const GlobalStyles = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;800;900&display=swap');
 
     * {
     margin:0;
@@ -24,7 +25,7 @@ export const GlobalStyles = createGlobalStyle`
     --color-negative: #e60000;
     --color-information: #155bcb;
 
-    --third-font: 'Judson', serif;
+    --third-font: 'Judsson', serif;
 
   }
   body {
@@ -40,36 +41,38 @@ export const GlobalStyles = createGlobalStyle`
   h2 > b{
       font-size: 1.3rem;
 
-    }
-
-    a{
-      font-size: .9rem;
-      text-decoration: none;
-      text-align: center;
-      font-family: var(--third-font);
-      color: #FFFFFF;
-      
-    }
-    small{
-      font-family: var(--third-font);
-      font-weight: 600;
-      font-size: .9rem;
-      text-align: center;      
-    }
-    span{
-      font-size: 1.8rem;
-      font-weight: bolD;
-      font-family: var(--third-font);
-      text-align: center;      
-    }
-    p{
-      
-    }
-    nav{
-      font-size: .8rem;
-      display:flex;
-      gap: 1rem;
-      justify-content: center;
   }
+  h3{
+    
+  }
+  
+
+  a{
+    font-size: .9rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--third-font);
+    color: #FFFFFF;
+  }
+  small{
+    font-family: var(--third-font);
+    font-weight: 600;
+    font-size: .9rem;
+    text-align: center;      
+  }
+  span{
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: var(--third-font);
+    text-align: center;      
+  }
+  p{
+  }
+  nav{
+    font-size: .8rem;
+    display:flex;
+    gap: 1rem;
+    justify-content: center;
+}
 
 `
