@@ -94,43 +94,43 @@ export const MainContent = styled(animated.div)`
   
 
 `
-export const LogoTitle = styled(animated.div)`
-    h1{
-        text-align: center;
-        font-family: 'Ephesis', cursive;
-        font-size: 17vw;
-        text-align: center;
-    }
+    export const LogoTitle = styled(animated.div)`
+        h1{
+            text-align: center;
+            font-family: 'Ephesis', cursive;
+            font-size: 17vw;
+            text-align: center;
+        }
 
-`
-export const MainSubtitle = styled(animated.div)`
-    h2{
-        letter-spacing: .4rem;
-        
-        font-family: 'Calistoga', cursive;
-        font-size: 3.5vw;
-        text-align: center;
-        position: relative;
-        bottom: .8rem;
-        
+    `
+    export const MainSubtitle = styled(animated.div)`
+        h2{
+            letter-spacing: .4rem;
+            
+            font-family: 'Calistoga', cursive;
+            font-size: 3.5vw;
+            text-align: center;
+            position: relative;
+            bottom: .8rem;
+            
+            
+            background: linear-gradient(55deg, #ECC820, #E4C47C, #ECC820, #ECC820, #E4C47C,#ECC820, #EBB12B, #EBB12B);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            
+        }
+            `
+    export const LogoComponent = styled(animated.div)`
+        max-width: 800px;
         
         background: linear-gradient(55deg, #ECC820, #E4C47C, #ECC820, #ECC820, #E4C47C,#ECC820, #EBB12B, #EBB12B);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        
-        
-    }
-        `
-export const LogoComponent = styled(animated.div)`
-    max-width: 800px;
-    
-    background: linear-gradient(55deg, #ECC820, #E4C47C, #ECC820, #ECC820, #E4C47C,#ECC820, #EBB12B, #EBB12B);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 
-`
+    `
 
 
 
@@ -220,12 +220,57 @@ export const CardsContent = styled(animated.div)`
 export const Card = styled(animated.div)`
     height: 8rem;
     width: 7rem;
-
+    
     display: flex;
     justify-content: center;
-
+    
     background: #F8F1F6;
     border: 2px solid rgba(184, 102, 0, 0.6);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 33px;
+    `
+
+
+
+export const SliderContent = styled(animated.div)`
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+   
+   
+    .slider-box{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    h3{
+        border-radius: .2rem;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 1.4rem;
+        background-color: blue;
+        color: white;
+        font-family: 'Varela Round',sans-serif;        font-size: 3.5vw;
+        font-weight: 900;
+        font-size: 1.4rem;
+    }
+    p{
+        font-family: 'Varela Round',sans-serif;        font-size: 3.5vw;
+        color: #000;
+    }
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        filter: blur(10px);
+    }
+    
 `

@@ -5,6 +5,7 @@ export const GlobalStyles = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 
     * {
     margin:0;
@@ -65,8 +66,6 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: bold;
     font-family: var(--third-font);
     text-align: center;      
-  }
-  p{
   }
   nav{
     font-size: .8rem;
