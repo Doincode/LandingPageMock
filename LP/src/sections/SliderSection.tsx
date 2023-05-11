@@ -1,19 +1,40 @@
 import React from 'react'
-import { SliderContent, VideoWrapper } from './style'
+import { MainWrapper, SliderContent, BackgroundWrapper } from './style'
 import bcimage from '../assets/bc.png'
 import brasilimage from '../assets/brasil.png'
 import arrestimage from '../assets/arrest.png'
 
+const slides = [['ImgBackground', 'TitleClass', 'Title', 'TextClass', 'Text', 'ButtonClass', 'Button', 'ButtonRef']]
+
 const SliderSection = () => {
+
+
+  
   return (
-    <SliderContent>
-        <img src={bcimage} alt="" />
-        <div className="slider-box">
-            <h3>Atuação presencial em Flagrantes</h3>
-            <p>Atuamos em prensencialmente em Balneário Camboriú, Curitiba, Itajaí, Navegantes, Região Metropolitana de Curitiba, Camboriú e Itapema</p>
-            <button>Clique aqui</button>
+    <MainWrapper>
+      <SliderContent>
+        <div className='slider'>
+          <div className='slide'>
+              <img src={bcimage} alt="" />
+              <h3 className=''>Sempre Prontos!</h3>
+              <p>Atuamos em todo o Brasil</p>
+              <button className=''>Clique aqui</button>
+          </div>
+          <div className='slide'>
+              <img src={arrestimage} alt="" />
+              <h3 className=''>Sempre Prontos!</h3>
+              <p>Atuamos em todo o Brasil</p>
+              <button className=''>Clique aqui</button>
+          </div>
+          <div className='slide'>
+              <img src={brasilimage} alt="" />
+              <h3 className=''>Sempre Prontos!</h3>
+              <p>Atuamos em todo o Brasil</p>
+              <button className=''>Clique aqui</button>
+          </div>
         </div>
-    </SliderContent>
+      </SliderContent>
+    </MainWrapper>
   )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSpring, animated } from '@react-spring/web'
-import {MainWrapper, WhatsAppButton, VideoBackground, VideoWrapper , MainContent, LogoTitle, MainSubtitle, LogoComponent } from './style'
+import {MainWrapper, WhatsAppButton, VideoBackground, BackgroundWrapper , MainContent, LogoTitle, MainSubtitle, LogoComponent } from './style'
 import handshake from '../assets/handshake.mp4'
 import wppicon from '../assets/wpp_icon.svg'
 
@@ -22,7 +22,7 @@ const MainSection = () => {
 
   return (
     <MainWrapper>
-         <VideoWrapper>
+         <BackgroundWrapper>
             <VideoBackground
                 src={handshake}
                 autoPlay
@@ -30,7 +30,7 @@ const MainSection = () => {
                 muted
                 style={videoSpring}
             />      
-        </VideoWrapper> 
+        </BackgroundWrapper> 
        <MainContent style={contentSpring}>
             <LogoComponent>
                 <LogoTitle>

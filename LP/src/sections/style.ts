@@ -2,28 +2,27 @@ import styled from 'styled-components'
 import { animated } from '@react-spring/web'
 import '@fontsource/ephesis'
 
-export const MainWrapper = styled.main`
+export const MainWrapper = styled.div`
     
     @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 
     width: 100%;
     height: 100vh;
 ` 
-export const VideoWrapper = styled.div`
-  position: relative;
+export const BackgroundWrapper = styled.div`
   width: 100%;
   height: 100vh;
   overflow: hidden;
 `  
 export const VideoBackground = styled(animated.video)`
-position: absolute;
-top: 0;
-left: 0;
-height: 100%;
-width: 100%;
-object-fit: cover;
-filter: blur(20px);
-box-shadow: inset 0 0 130px 190px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(20px);
+    box-shadow: inset 0 0 130px 190px rgba(0, 0, 0, 0.5);
 `
 
 export const WhatsAppButton = styled(animated.div)`
@@ -233,44 +232,58 @@ export const Card = styled(animated.div)`
 
 
 export const SliderContent = styled(animated.div)`
-    position: relative;
-    width: 100%;
     height: 100vh;
-
-    display: flex;
-    align-items: center;
-   
-   
-    .slider-box{
-        height: 90%;
+    width: 100%;
+    overflow: scroll;
+    
+    
+    
+    .slider{
+        position: relative;
+        background-color: rgba(20, 55, 15, 0.55);
+        width: 300%;
+        height: 100vh;
+        display: flex;
+    }
+    .slide{
+        height: 100%;
+        width: ${100/3}%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
     }
+    
+    img{
+        position: absolute;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        filter: blur(5px);
+    }
     h3{
         border-radius: .2rem;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        padding: 1.4rem;
+        padding: 1rem;
         background-color: blue;
         color: white;
-        font-family: 'Varela Round',sans-serif;        font-size: 3.5vw;
+        font-family: 'Varela Round',sans-serif;        
+        font-size: 3.5vw;
         font-weight: 900;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
+        text-align: center;
     }
     p{
-        font-family: 'Varela Round',sans-serif;        font-size: 3.5vw;
-        color: #000;
+        font-family: 'Varela Round',sans-serif;        
+        font-size: 3.5vw;
+        color: #fff;
+        font-weight: 500;
+        text-align: center;
     }
-    img{
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        height: 100vh;
-        width: 100%;
-        object-fit: cover;
-        filter: blur(10px);
+    button{
+        height: 4rem;
+        width: 70%;
     }
     
 `
