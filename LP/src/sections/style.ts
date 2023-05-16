@@ -232,15 +232,15 @@ export const Card = styled(animated.div)`
 
 
 export const SliderContent = styled(animated.div)`
+    position: relative;
+    
     height: 100vh;
     width: 100%;
-    overflow: scroll;
-    
+    overflow: hidden;
     
     
     .slider{
         position: relative;
-        background-color: rgba(20, 55, 15, 0.55);
         width: 300%;
         height: 100vh;
         display: flex;
@@ -254,7 +254,7 @@ export const SliderContent = styled(animated.div)`
         justify-content: space-around;
     }
     
-    img{
+    .slide img{
         position: absolute;
         z-index: -1;
         width: 100vw;
@@ -280,6 +280,24 @@ export const SliderContent = styled(animated.div)`
         color: #fff;
         font-weight: 500;
         text-align: center;
+    }
+    .arrow-buttons{
+        position: absolute;
+        height: 15%;
+        width: 100vw;
+        top: 50vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem 0rem;
+        opacity: 70%;
+        z-index: 2;
+        
+    }
+    .arrow-buttons img{
+        box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+        width: 10vw;
+        object-fit: cover;
+
     }
     button{
         height: 4rem;
