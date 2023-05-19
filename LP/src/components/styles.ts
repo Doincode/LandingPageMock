@@ -4,7 +4,7 @@ import { animated } from '@react-spring/web'
 export const Header = styled(animated.div)`
     height: 5rem;
     width: 100vw;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     padding-bottom: 0.5rem; 
     
