@@ -8,21 +8,44 @@ import arrowRight from '../assets/right.svg'
 
 const SliderSection = () => {
 
+  const [index, setIndex] = useState(1);
+
+  
+
+  const nextSlide = () => { 
+    let indexNumber = index
+    if(index == 3){
+      setIndex(1)
+      return
+    }
+    indexNumber++
+    setIndex(indexNumber)
+
+  }
+  const prevSlide = () => { 
+    let indexNumber = index
+    if(index == 1){
+      setIndex(3)
+      return
+    }
+    indexNumber--
+    setIndex(indexNumber)
+
+  }
  
   return (
-    <MainWrapper>
       <SliderContent>
         <div className="arrow-buttons">
-          <img src={arrowLeft} alt="" />
-          <img src={arrowRight} alt="" />
+          <img src={arrowLeft} alt="" onClick={prevSlide} />
+          <img src={arrowRight} alt="" onClick={nextSlide} />
         </div>
-        <div className='slider'>
+        <div className={`slider ${index == 2 ? 'slide-2': index == 3 ? 'slide-3': ''}`}>
 
           <div className='slide'>
             <img src={bcimage} alt="" />
             <h3 className=''>Sempre Prontos!</h3>
             <p>Atuamos em todo o Brasil</p>
-            <button className=''>Clique aqui</button>
+            <button className=''>Clique aqui{index}</button>
           </div>
 
           <div className='slide'>
@@ -41,7 +64,6 @@ const SliderSection = () => {
 
         </div>
       </SliderContent>
-    </MainWrapper>
   )
 }
 

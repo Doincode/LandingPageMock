@@ -244,6 +244,13 @@ export const SliderContent = styled(animated.div)`
         width: 300%;
         height: 100vh;
         display: flex;
+        transition: transform 1s;
+    }
+    .slide-2{
+        transform: translateX(-99vw); 
+    }
+    .slide-3{
+        transform: translateX(-200vw); 
     }
     .slide{
         height: 100%;
@@ -266,7 +273,7 @@ export const SliderContent = styled(animated.div)`
         border-radius: .2rem;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         padding: 1rem;
-        background-color: blue;
+        background-color: #1F2E42;
         color: white;
         font-family: 'Varela Round',sans-serif;        
         font-size: 3.5vw;
@@ -305,3 +312,38 @@ export const SliderContent = styled(animated.div)`
     }
     
 `
+    export const ContactContent = styled(animated.div)`
+        position: relative;
+        
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        justify-content: space-around;    
+
+        background: #F8F1F6;
+        
+        
+        .socials{
+            display: flex;
+            width: 80%;
+            justify-content: space-around;
+            padding-bottom: 1rem;
+            border-bottom: solid .5rem #1F2E42;
+        }
+        .socials img{
+            height: 2.4rem;
+        }
+
+        .map{
+            background-color: greenyellow;
+
+            height: 30%;
+            width: 100%
+        }
+        .marker{
+            margin-bottom: 2.5rem;
+        }
+    `
+        

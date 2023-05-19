@@ -56,13 +56,6 @@ const CardsSection = () => {
                 </li>
             </div>
         </ul>
-        <WhatsAppButton>
-                <div>
-                  <small>Precisando de um especialista?</small>
-                  <span>Fale conosco!</span>
-                </div>
-                <img src={wppicon} alt='' />
-        </WhatsAppButton>
     </CardsContent>
   )
 }
