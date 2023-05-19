@@ -164,7 +164,7 @@ export const CardsContent = styled(animated.div)`
         justify-content: center;
 
         text-align: center;
-        background: linear-gradient(90deg, rgba(184, 102, 0, 0.5) -0.14%, rgba(184, 102, 0, 0.721958) 10.31%, #B86600 46.65%, rgba(184, 102, 0, 0.696918) 94.47%, rgba(184, 102, 0, 0.5) 100%);
+        background: linear-gradient(90deg, rgba(31, 46, 66, 0.8) -0.14%, rgba(31, 46, 66, 0.9) 10.31%, #1f2e42 46.65%, rgba(31, 46, 66, 0.9) 94.47%, rgba(31, 46, 66,0.8) 100%);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     p{
