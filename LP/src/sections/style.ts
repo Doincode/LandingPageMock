@@ -134,7 +134,7 @@ export const MainContent = styled(animated.div)`
 
 
 export const CardsContent = styled(animated.div)`
-    height: 100vh;
+    height: 130vh;
     width: 100%;
 
     background: #F8F1F6;
@@ -143,9 +143,10 @@ export const CardsContent = styled(animated.div)`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    padding-bottom: 10vh;
     
     > p{
-        margin-top: 2rem;
         width: 80%;
         text-align: center;
         font-size: 1.4rem;
@@ -174,20 +175,14 @@ export const CardsContent = styled(animated.div)`
 
     ul{
         display: flex;
+        flex-direction: column;
         gap: 2rem;
 
         justify-content: center;
         align-items: center;
-
-        height: 60%;
-        width: 85%;
-        overflow: scroll;
-
-        
     }
     ul > div{
         display: flex;
-        flex-direction: column;
         gap: 1.6rem;
     }
     li{
@@ -224,7 +219,7 @@ export const Card = styled(animated.div)`
     justify-content: center;
     
     background: #F8F1F6;
-    border: 2px solid rgba(184, 102, 0, 0.6);
+    border: 2px solid #1F2E42;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 33px;
     `
@@ -312,7 +307,7 @@ export const SliderContent = styled(animated.div)`
     }
     
 `
-    export const ContactContent = styled(animated.div)`
+export const ContactContent = styled(animated.div)`
         position: relative;
         
         height: 50vh;
@@ -345,5 +340,5 @@ export const SliderContent = styled(animated.div)`
         .marker{
             margin-bottom: 2.5rem;
         }
-    `
+`
         

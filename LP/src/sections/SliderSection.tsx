@@ -43,15 +43,15 @@ const SliderSection = () => {
 
           <div className='slide'>
             <img src={bcimage} alt="" />
-            <h3 className=''>Sempre Prontos!</h3>
-            <p>Atuamos em todo o Brasil</p>
+            <h3 className=''>Mais perto de você</h3>
+            <p>Atuação presencial em flagrantes da região de Balneário Camboriú, Itajaí, Navegantes, Curitiba e região metropolitana.</p>
             <button className=''>Clique aqui{index}</button>
           </div>
 
           <div className='slide'>
             <img src={arrestimage} alt="" />
-            <h3 className=''>Sempre Prontos!</h3>
-            <p>Atuamos em todo o Brasil</p>
+            <h3 className=''>Situação de Emergência?</h3>
+            <p>Atendimento em delegacia 24horas</p>
             <button className=''>Clique aqui</button>
           </div>
 
