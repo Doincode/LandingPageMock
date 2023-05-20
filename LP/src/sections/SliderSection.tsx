@@ -43,22 +43,34 @@ const SliderSection = () => {
 
           <div className='slide'>
             <img src={bcimage} alt="" />
-            <h3 className=''>Mais perto de você</h3>
-            <p>Atuação presencial em flagrantes da região de Balneário Camboriú, Itajaí, Navegantes, Curitiba e região metropolitana.</p>
-            <button className=''>Clique aqui{index}</button>
+            <div>
+              <h3 className='bc-slide'>Perto de você!</h3>
+              <p className='align-left dark-bg'>Atuação presencial em flagrantes na região de:</p>
+              <ul className=''>
+                <li>Balneário Camboriú;</li>
+                <li>Itajaí;</li>
+                <li>Navegantes;</li>
+                <li>Curitiba e RMC;</li>
+              </ul>
+            </div>
+            <button className=''>{index}</button>
           </div>
 
           <div className='slide'>
-            <img src={arrestimage} alt="" />
-            <h3 className=''>Situação de Emergência?</h3>
-            <p>Atendimento em delegacia 24horas</p>
-            <button className=''>Clique aqui</button>
+              <img src={arrestimage} alt="" />
+            <div>
+              <h3 className=''>Situação de Emergência?</h3>
+              <p>Atendimento em delegacia 24horas</p>
+            </div>
+              <button className=''>Clique aqui</button>
           </div>
 
           <div className='slide'>
             <img src={brasilimage} alt="" />
-            <h3 className=''>Sempre Prontos!</h3>
-            <p>Atuamos em todo o Brasil</p>
+            <div>
+              <h3 className=''>Sempre Prontos!</h3>
+              <p>Atuamos em todo o Brasil</p>
+            </div>
             <button className=''>Clique aqui</button>
           </div>
 

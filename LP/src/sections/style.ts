@@ -134,9 +134,7 @@ export const MainContent = styled(animated.div)`
 
 
 export const CardsContent = styled(animated.div)`
-    height: 130vh;
     width: 100%;
-
     background: #F8F1F6;
 
     display: flex;
@@ -158,7 +156,7 @@ export const CardsContent = styled(animated.div)`
 
         width: 100%;
         height: 20%;
-        padding-top: 10%;
+        padding: 10% 0%;
         
         display: flex;
         flex-direction: column;
@@ -169,6 +167,7 @@ export const CardsContent = styled(animated.div)`
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     p{
+        margin-top: 1rem;
         font-weight: 600;
         color: #2A324B;
     }
@@ -177,6 +176,7 @@ export const CardsContent = styled(animated.div)`
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        margin-top: 3rem;
 
         justify-content: center;
         align-items: center;
@@ -233,7 +233,6 @@ export const SliderContent = styled(animated.div)`
     width: 100%;
     overflow: hidden;
     
-    
     .slider{
         position: relative;
         width: 300%;
@@ -256,6 +255,12 @@ export const SliderContent = styled(animated.div)`
         justify-content: space-around;
     }
     
+    .slide > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+    }
     .slide img{
         position: absolute;
         z-index: -1;
@@ -265,23 +270,53 @@ export const SliderContent = styled(animated.div)`
         filter: blur(5px);
     }
     h3{
+        min-width: fit-content;
+        width: min-content;
         border-radius: .2rem;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        padding: 1rem;
-        background-color: #1F2E42;
+        box-shadow: 4px 10px 10px rgba(255, 255, 255,1.55);
+        padding: 1rem 3rem;
+        background-color: rgba(d .9);
         color: white;
         font-family: 'Varela Round',sans-serif;        
-        font-size: 3.5vw;
+        font-size: 8vw;
         font-weight: 900;
-        font-size: 1.8rem;
         text-align: center;
     }
-    p{
+    .bc-slide{
+        color: white;
+        -webkit-text-stroke: 1px rgba(197, 145, 44, .4);
+        background-color: rgba(31, 46, 66, .8);
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+    ul > li:first-child{
+        font-size: 5.5vw;
+        text-shadow: 0px 5px 15px #0E6BA8;
+    }
+    li{
+        color: white;
         font-family: 'Varela Round',sans-serif;        
-        font-size: 3.5vw;
+        font-size: 4vw;
         color: #fff;
-        font-weight: 500;
+        font-weight: 700;
+        text-align: end;
+        text-shadow: 0px 5px 5px rgba(31, 46, 66, .9);
+    }
+    p{
+        width: 80%;
+        font-family: 'Varela Round',sans-serif;        
+        font-size: 6.5vw;
+        color: #fff;
+        font-weight: 700;
         text-align: center;
+        text-shadow: 0px 5px 6px #0E6BA8;
+
+    }
+    .align-left{
+        text-align: start;
     }
     .arrow-buttons{
         position: absolute;
@@ -303,7 +338,13 @@ export const SliderContent = styled(animated.div)`
     }
     button{
         height: 4rem;
-        width: 70%;
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 4rem;
+        border: 3px solid blue; /* borda azul */
+        text-shadow: 2px 2px 2px gold; /* sombra dourada */
+        box-shadow: 2px 2px 2px gold; /* sombra dourada */
+        padding: 10px 20px; /* espaço interno */
     }
     
 `
