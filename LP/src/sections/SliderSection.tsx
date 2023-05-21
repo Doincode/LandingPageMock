@@ -44,7 +44,7 @@ const SliderSection = () => {
           <div className='slide'>
             <img src={bcimage} alt="" />
             <div>
-              <h3 className='bc-slide'>Perto de você!</h3>
+              <h3 className='bc-slide'>Estamos perto de você!</h3>
               <p className='align-left dark-bg'>Atuação presencial em flagrantes na região de:</p>
               <ul className=''>
                 <li>Balneário Camboriú;</li>
@@ -53,7 +53,7 @@ const SliderSection = () => {
                 <li>Curitiba e RMC;</li>
               </ul>
             </div>
-            <button className=''>{index}</button>
+            <button className=''>Chamar criminalista</button>
           </div>
 
           <div className='slide'>

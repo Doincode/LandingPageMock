@@ -31,7 +31,8 @@ export const WhatsAppButton = styled(animated.div)`
     background: rgba(82, 206, 95, 0.5);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
-    height: 4.5rem;
+    height: fit-content;
+    min-height: 4.5rem;
     min-width: fit-content;
     width: min-content;    
     max-width: 18.9rem;
@@ -284,8 +285,8 @@ export const SliderContent = styled(animated.div)`
     }
     .bc-slide{
         color: white;
-        -webkit-text-stroke: 1px rgba(197, 145, 44, .4);
-        background-color: rgba(31, 46, 66, .8);
+        text-shadow: 0px 5px 15px black;
+        background-color: rgba(31, 96, 266, .5);
     }
     ul{
         display: flex;
@@ -337,14 +338,15 @@ export const SliderContent = styled(animated.div)`
 
     }
     button{
-        height: 4rem;
-        width: 50%;
-        background-color: rgba(255, 255, 255, 0.7);
+        color: white;
+        font-weight: 600;
+        font-size: 1.4rem;
+
+        background-color: rgba(31, 96, 266, 1);
         border-radius: 4rem;
-        border: 3px solid blue; /* borda azul */
-        text-shadow: 2px 2px 2px gold; /* sombra dourada */
-        box-shadow: 2px 2px 2px gold; /* sombra dourada */
-        padding: 10px 20px; /* espaço interno */
+        border: 3px solid rgba(255, 255, 255,.55); /* borda azul */
+        box-shadow: 2px 2px 1rem rgba(131, 146, 166, .8); /* sombra dourada */
+        padding: 2rem 1rem; /* espaço interno */
     }
     
 `
