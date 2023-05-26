@@ -230,7 +230,11 @@ export const Card = styled(animated.div)`
 export const SliderContent = styled(animated.div)`
     position: relative;
     
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 110vh;
     width: 100%;
     overflow: hidden;
     
@@ -248,7 +252,7 @@ export const SliderContent = styled(animated.div)`
         transform: translateX(-200vw); 
     }
     .slide{
-        height: 100%;
+        height: 100vh;
         width: ${100/3}%;
         display: flex;
         flex-direction: column;
@@ -384,4 +388,8 @@ export const ContactContent = styled(animated.div)`
             margin-bottom: 2.5rem;
         }
 `
-        
+export const CounterrContent = styled(animated.div)`
+    height: 30vh;
+    background-color: #1d3557;
+
+ `

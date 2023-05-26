@@ -4,6 +4,7 @@ import CardsSection from "./sections/CardsSection"
 import SliderSection from "./sections/SliderSection"
 import MapsSection from "./sections/ContactSection"
 import { Header } from "./components/styles"
+import CounterSection from "./sections/CounterSection"
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     <>
       <HeaderComponent/>
       <MainSection/>
+      <CounterSection/>
       <CardsSection/>
       <SliderSection/>
       <MapsSection/>
