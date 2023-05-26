@@ -5,6 +5,7 @@ import wppIcon from '../assets/zapvector.svg'
 import phoneIcon from '../assets/phonevector.svg'
 import mailIcon from '../assets/mailvector.svg'
 import instaIcon from '../assets/instavector.svg'
+import backgroundImg from '../assets/esc.png'
 
 
 const MapsSection = () => {
@@ -16,16 +17,15 @@ const MapsSection = () => {
 
   return (
     <ContactContent>
-      <h1>Entre em contato!</h1>
-      <div className="socials">
-        <img src={wppIcon} alt="" />
-        <img src={mailIcon} alt="" />
-        <img src={instaIcon} alt="" />
-        <img src={phoneIcon} alt="" />
-      </div>
-
+        <h1>Entre em contato!</h1>
+        <div className="socials">
+          <img src={wppIcon} alt="" />
+          <img src={mailIcon} alt="" />
+          <img src={instaIcon} alt="" />
+          <img src={phoneIcon} alt="" />
+        </div>
         <div className="map">
-       { isLoaded ? (
+        { isLoaded ? (
       <GoogleMap  
         mapContainerStyle={{width: '100%', height: '100%'}}
         center={{lat: -27.00345121502357, lng: -48.6258688453037}}
@@ -36,6 +36,8 @@ const MapsSection = () => {
       </GoogleMap>
       ) : <></>}
         </div>
+
+      <img src={backgroundImg} alt="" />
     </ContactContent>
   )
 }

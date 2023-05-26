@@ -94,45 +94,43 @@ export const MainContent = styled(animated.div)`
   
 
 `
-    export const LogoTitle = styled(animated.div)`
-        h1{
-            text-align: center;
-            font-family: 'Ephesis', cursive;
-            font-size: 17vw;
-            text-align: center;
-        }
+export const LogoTitle = styled(animated.div)`
+    h1{
+        text-align: center;
+        font-family: 'Ephesis', cursive;
+        font-size: 17vw;
+        text-align: center;
+    }
 
-    `
-    export const MainSubtitle = styled(animated.div)`
-        h2{
-            letter-spacing: .4rem;
-            
-            font-family: 'Calistoga', cursive;
-            font-size: 3.5vw;
-            text-align: center;
-            position: relative;
-            bottom: .8rem;
-            
-            
-            background: linear-gradient(55deg, #ECC820, #E4C47C, #ECC820, #ECC820, #E4C47C,#ECC820, #EBB12B, #EBB12B);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            
-            
-        }
-            `
-    export const LogoComponent = styled(animated.div)`
-        max-width: 800px;
+`
+export const MainSubtitle = styled(animated.div)`
+    h2{
+        letter-spacing: .4rem;
+        
+        font-family: 'Calistoga', cursive;
+        font-size: 3.5vw;
+        text-align: center;
+        position: relative;
+        bottom: .8rem;
+        
         
         background: linear-gradient(55deg, #ECC820, #E4C47C, #ECC820, #ECC820, #E4C47C,#ECC820, #EBB12B, #EBB12B);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        
+        
+    }
+        `
+export const LogoComponent = styled(animated.div)`
+    max-width: 800px;
+    
+    background: linear-gradient(55deg, #ECC820, #E4C47C, #ECC820, #ECC820, #E4C47C,#ECC820, #EBB12B, #EBB12B);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-    `
-
-
+`
 
 export const CardsContent = styled(animated.div)`
     width: 100%;
@@ -223,10 +221,7 @@ export const Card = styled(animated.div)`
     border: 2px solid #1F2E42;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 33px;
-    `
-
-
-
+`
 export const SliderContent = styled(animated.div)`
     position: relative;
     
@@ -280,7 +275,6 @@ export const SliderContent = styled(animated.div)`
         border-radius: .2rem;
         box-shadow: 4px 10px 10px rgba(255, 255, 255,1.55);
         padding: 1rem 3rem;
-        background-color: rgba(d .9);
         color: white;
         font-family: 'Varela Round',sans-serif;        
         font-size: 8vw;
@@ -348,16 +342,16 @@ export const SliderContent = styled(animated.div)`
 
         background-color: rgba(31, 96, 266, 1);
         border-radius: 4rem;
-        border: 3px solid rgba(255, 255, 255,.55); /* borda azul */
-        box-shadow: 2px 2px 1rem rgba(131, 146, 166, .8); /* sombra dourada */
-        padding: 2rem 1rem; /* espaço interno */
+        border: 3px solid rgba(255, 255, 255,.55); 
+        box-shadow: 2px 2px 1rem rgba(131, 146, 166, .8); 
+        padding: 2rem 1rem;
     }
     
 `
 export const ContactContent = styled(animated.div)`
         position: relative;
         
-        height: 50vh;
+        height: 70vh;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -365,7 +359,25 @@ export const ContactContent = styled(animated.div)`
         justify-content: space-around;    
 
         background: #F8F1F6;
-        
+        .content-wrapper{
+            width: 100%;
+            height: 100%;
+        }
+        img{
+            z-index: -1;
+            display: none;
+            width: 100%;
+            opacity: 10%;
+
+            /* z-index: -1;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            filter: blur(20px);
+            box-shadow: inset 0 0 130px 190px rgba(0, 0, 0, 0.5); */
+        }
         
         .socials{
             display: flex;
@@ -388,8 +400,38 @@ export const ContactContent = styled(animated.div)`
             margin-bottom: 2.5rem;
         }
 `
-export const CounterrContent = styled(animated.div)`
+export const CounterContent = styled(animated.div)`
     height: 30vh;
-    background-color: #1d3557;
+    background-color: rgba(31, 46, 66, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+        h3{
+            color: white;
+            font-size: 7vw;
+            font-weight: normal;
+            font-family: 'Varela Round',sans-serif;        
+            
+        }
+        p{
+            color: white;
+            font-family: 'Calistoga', cursive;
+            font-size: 6vw;
+        }
+        .counter{
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+
+        }
+
+        .counter > p:first-child{
+            padding: .7rem .5rem;
+            border-radius: 20%;
+            border: solid 2px red;
+            font-size: 2.8rem;
+        }
 
  `

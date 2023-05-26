@@ -12,8 +12,8 @@ function App() {
     <>
       <HeaderComponent/>
       <MainSection/>
-      <CounterSection/>
       <CardsSection/>
+      <CounterSection/>
       <SliderSection/>
       <MapsSection/>
     </>
