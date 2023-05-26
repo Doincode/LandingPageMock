@@ -350,7 +350,7 @@ export const SliderContent = styled(animated.div)`
 `
 export const ContactContent = styled(animated.div)`
         position: relative;
-        
+        overflow: hidden;
         height: 70vh;
         width: 100%;
         display: flex;
@@ -359,27 +359,23 @@ export const ContactContent = styled(animated.div)`
         justify-content: space-around;    
 
         background: #F8F1F6;
-        .content-wrapper{
-            width: 100%;
-            height: 100%;
-        }
-        img{
-            z-index: -1;
-            display: none;
-            width: 100%;
-            opacity: 10%;
-
-            /* z-index: -1;
-            top: 0;
+        
+        #background-img{
+            mix-blend-mode: multiply; 
+            opacity: 70%;
+            position: absolute;
+            top: 30%;
             left: 0;
-            height: 100%;
+            height: 70%;
             width: 100%;
             object-fit: cover;
-            filter: blur(20px);
-            box-shadow: inset 0 0 130px 190px rgba(0, 0, 0, 0.5); */
+            filter: blur(2px);
+            box-shadow: inset 0 0 130px 190px rgba(0, 0, 0, 0.5);
+            
         }
         
         .socials{
+            z-index: 1;
             display: flex;
             width: 80%;
             justify-content: space-around;
