@@ -356,13 +356,21 @@ export const ContactContent = styled(animated.div)`
         display: flex;
         flex-direction: column;
         align-items: center;    
-        justify-content: space-around;    
+        justify-content: space-evenly;    
 
         background: #F8F1F6;
         
+        h2{
+            border-radius: 1rem;
+            padding: 3vw;
+            background-color: #1F2E42;
+            background-color: #1F2E42;
+            color: white;
+            font-size: 10vw;
+        }
         #background-img{
             mix-blend-mode: multiply; 
-            opacity: 70%;
+            opacity: 40%;
             position: absolute;
             top: 30%;
             left: 0;
@@ -377,13 +385,15 @@ export const ContactContent = styled(animated.div)`
         .socials{
             z-index: 1;
             display: flex;
-            width: 80%;
-            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+            width: 70vw;
+            justify-content: space-evenly;
             padding-bottom: 1rem;
-            border-bottom: solid .5rem #1F2E42;
+            border-bottom: solid .5rem red;
         }
         .socials img{
-            height: 2.4rem;
+            width: 25vw;
         }
 
         .map{

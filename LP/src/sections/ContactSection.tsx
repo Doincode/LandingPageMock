@@ -18,7 +18,7 @@ const MapsSection = () => {
   return (
     <ContactContent>
       <img src={escImage} id='background-img' />
-      <h1>Entre em contato!</h1>
+      <h2>Entre em contato!</h2>
       <div className="socials">
         <img src={wppIcon} alt="" />
         <img src={mailIcon} alt="" />
