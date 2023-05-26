@@ -351,7 +351,7 @@ export const SliderContent = styled(animated.div)`
 export const ContactContent = styled(animated.div)`
         position: relative;
         overflow: hidden;
-        height: 70vh;
+        height: 90vh;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -372,9 +372,9 @@ export const ContactContent = styled(animated.div)`
             mix-blend-mode: multiply; 
             opacity: 40%;
             position: absolute;
-            top: 30%;
+            bottom: 0%;
             left: 0;
-            height: 70%;
+            height: 45%;
             width: 100%;
             object-fit: cover;
             filter: blur(2px);
