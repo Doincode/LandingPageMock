@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { animated } from '@react-spring/web'
 
-export const Header = styled(animated.div)`
+export const Header = styled.header`
     height: 5rem;
     width: 100vw;
     position: absolute;
